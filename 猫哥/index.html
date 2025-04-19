@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祝小严生日快乐</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="countdown" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%); display: flex; justify-content: center; align-items: center; z-index: 100;">
+        <h1 style="font-size: 5rem; color: white; text-shadow: 0 0 10px rgba(0,0,0,0.3);" id="countdown-number">3</h1>
+    </div>
+    
+    <div class="container" style="display: none;">
+        <div class="greeting">
+            <h1>✨小严生日快乐!✨</h1>
+            <p>愿所有努力都有美好回报<br>所遇皆温暖，所爱皆美好</p>
+        </div>
+        
+        <div class="cake-container">
+            <canvas id="birthdayCake"></canvas>
+        </div>
+        
+        <audio id="birthdaySong" loop autoplay>
+            <source src="https://assets.mixkit.co/music/preview/mixkit-happy-birthday-880.mp3" type="audio/mpeg">
+            您的浏览器不支持音频元素。
+        </audio>
+        <div class="music-controls">
+            <button id="musicControl" class="music-button">
+                <span class="icon">🔊</span>
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
